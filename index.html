@@ -2,7 +2,117 @@
   <link rel="stylsheet" href="./styles.css" type="css/text">
 </head>
 <body>
-  <section class="flex-box">
-    
-  </section>
+  <header>
+    <h1>CSS Cheat Sheet</h1>
+    <address class="author">
+      By Matthijs Snijder on <time pubdate datetime="2021-02-22">22 Febr. 2021</time>
+    </address>
+  </header>
+  <main>
+    <section class="flex-box">
+      <h2>Flex-box</h2>
+      <br class="divider">
+      <h3>Parent Container</h3>
+      <table class="parent-explainera">
+        <thead>
+          <td>Tag</td>
+          <td>Description</td>
+          <td>Standard Options</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>display</td>
+            <td>Defines a flex container and enables it for al its children</td>
+            <td>flex</td>
+          </tr>
+          <tr>
+            <td>flex-direction</td>
+            <td>Establishes the main-axis</td>
+            <td>row(default), row-reverse, column, column-reverse</td>
+          </tr>
+          <tr>
+            <td>flex-wrap</td>
+            <td>Allow items to wrap as need. <br> Items will try to fit in one line by default</td>
+            <td>nowrap, wrap, wrap-reverse</td>
+          </tr>    
+          <tr>
+            <td>flex-flow</td>
+            <td>
+              This is shorthand for <strong>flex-direction</strong> and <strong>flex-wrap</strong>
+              properties, which together define the flex container's main and cross axes.
+            </td>
+            <td>The default value is <strong>row nowrap</strong></td>
+          </tr>
+          <tr>
+            <td>justify-content</td>
+            <td>This defines the alignment along the main axis.</td>
+            <td>flex-start, flex-end, start, end, left, direction, right, center, speace-between, space-around, space evenly</td>
+          </tr>
+          <tr>
+            <td>align-items</td>
+            <td>This defines the default behvior for how flex items are laid out along the cross axis on the current line.</td>
+            <td>stretch (default), flex-start, start, self-start, flex-end / end / self-end, center, baseline</td>
+          </tr>
+          <tr>
+            <td>align-content</td>
+            <td>This align a flex container's lines within when there is extra space in the cross-axis similar to justif-content.</td>
+            <td>normal, flex-start / start, flex-end, center, space-between, space-around, space-evenly, stretch</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Properties for the children</h3>
+      <table class="child-explainer"
+        <thead>
+          <td>Tag</td>
+          <td>Description</td>
+          <td>Standard Options</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>order</td>
+            <td>The <strong>order</strong> property controls the order in which they appear. <br> By default they appear in source order.</td>
+            <td>Default value is 0</td>
+          </tr>
+          <tr>
+            <td>flex-grow</td>
+            <td>
+              Defines the ability of a flex-item to grow if necessary.
+              It dictates what amount of the available space inside the flex container the item should take up. <br>
+              If al items have a value of 1, space is distributed equally.
+              If one item then has a value of 2, this item will get twice as much space.
+            </td>
+            <td>Negative numbers are invalid</td>
+          </tr>
+          <tr>
+            <td>flex-shrink</td>
+            <td>Defines the ability for a flex item to shrink of nexessary.</td>
+            <td>Negative numbers are invalid. Default value is 1.</td>
+          </tr>
+          <tr>
+            <td>flex-basis</td>
+            <td>
+              This defines the default sie of an element before the remaining space is distributed.
+              It can be a length or a keyword.
+            </td>
+            <td>auto, main-size, content</td>
+          </tr>
+          <tr>
+            <td>flex</td>
+            <td>
+              Shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and 
+              <strong>flex-basis</strong> combined. 
+              It is recommended that you use this shorthand property rather than set the individual properties. 
+            </td>
+            <td>Default value is 0 1 auto</td>
+          </tr>
+          <tr>
+            <td>align-self</td>
+            <td>This allows the default alignment to be overridden for individual flex-items</td>
+            <td>Default value is value of parent-container</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </section>
+  </main>
 </body>
