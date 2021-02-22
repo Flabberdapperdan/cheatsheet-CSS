@@ -1,3 +1,81 @@
-.body {
-  
+
+* {
+  background-color: beige;
+  font-family: 'Oswald', sans-serif;
+  gap: 3rem;
+  font-size: medium;
 }
+
+body {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* header */
+header > * {
+  background-color:  rgb(45, 45, 45);
+  color: rgb(45, 45, 45);
+}
+
+header h1 {
+  color: beige;
+  margin: 0;
+}
+
+header address {
+  color: beige;
+  background-color:  rgb(45, 45, 45);
+}
+
+header time {
+  background-color:  rgb(45, 45, 45);
+}
+/* man */
+.page-wrap {
+  display: flex;
+  background-color: rgb(45, 45, 45);
+  flex-flow: column nowrap;
+}
+
+.page-wrap :nth-child(1) {
+  margin: 0 1rem;
+}
+
+.divider {
+  background-color: rgb(85, 85, 225);
+  corners
+}
+
+main {
+  background-color: beige;
+}
+
+h1 {
+  color: rgb(26, 26, 26);
+  font-size: 2em;
+}
+
+
+/* table properties */
+table {
+  border: 1px;
+  border-color: cadetblue;
+  border-collapse: collapse;
+}
+
+table strong {
+  color: rgb(51, 107, 88);
+}
+
+.column1 {
+  min-width: fit-content;
+  max-height: 1em;
+}
+
+td {
+
+}
+
+
